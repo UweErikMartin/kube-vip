@@ -2,11 +2,12 @@
 
 High Availability and Load-Balancing
 
-![](https://github.com/kube-vip/kube-vip/raw/main/kube-vip.png)
+![kube-vip logo](https://github.com/kube-vip/kube-vip/raw/main/kube-vip.png)
 
 [![Build and publish main image regularly](https://github.com/kube-vip/kube-vip/actions/workflows/main.yaml/badge.svg)](https://github.com/kube-vip/kube-vip/actions/workflows/main.yaml)
 
 ## Overview
+
 Kubernetes Virtual IP and Load-Balancer for both control plane and Kubernetes services
 
 The idea behind `kube-vip` is a small self-contained Highly-Available option for all environments, especially:
@@ -43,12 +44,13 @@ The purpose of `kube-vip` is to simplify the building of HA Kubernetes clusters,
 `kube-vip` provides both a floating or virtual IP address for your kubernetes cluster as well as load-balancing the incoming traffic to various control-plane replicas. At the current time to replicate this functionality a minimum of two pieces of tooling would be required:
 
 **VIP**:
+
 - [Keepalived](https://www.keepalived.org/)
 - [UCARP](https://ucarp.wordpress.com/)
 - Hardware Load-balancer (functionality differs per vendor)
 
-
 **LoadBalancing**:
+
 - [HAProxy](http://www.haproxy.org/)
 - [Nginx](http://nginx.com)
 - Hardware Load-balancer (functionality differs per vendor)
